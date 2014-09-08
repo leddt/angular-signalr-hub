@@ -12,6 +12,8 @@ angular.module('SignalR', [])
 		}
 		
 		connection.logging = (options && options.logging ? true : false);
+		
+		return connection;
 	};
 
 	return function (hubName, options) {
